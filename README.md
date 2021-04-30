@@ -10,7 +10,7 @@ The repository provides the Python scripts implementing the compression/decompre
 # Dataset
 An example of water vapor map in GeoTIFF format can be dowloaded from [here](https://www.dropbox.com/s/k92yz0zgyn7pal5/abs20180321.tif?dl=0). The map is related to South Africa areas and is derived from the synergic use of SAR Sentinel-1 and GNSS data. The file size is about 170 MB.
 
-![alt text](https://www.dropbox.com/s/oy441nbadm4ckew/ZTD_assoluta.png?dl=0)
+![image](https://www.dropbox.com/s/oy441nbadm4ckew/ZTD_assoluta.png)
 
 # Script execution
 
