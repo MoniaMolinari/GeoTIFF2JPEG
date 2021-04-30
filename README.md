@@ -5,7 +5,7 @@ TWIGA aims at providing currently unavailable geo-information to improve weather
 
 The main drawback in data delivery and storage of water vapor products is certainly related to their size, which can reach the order of hundreds of MegaBytes per map. This problem has been overcome by implementing a compression method able to drastically reduce file size without significant accuracy losses.
 
-The repository provides the Python scripts implementing the compression/decompression method and a water vapor product for testing. In the following istructions about the environment configuraton and the scripts execution are provided.
+The repository provides the Python scripts implementing the compression/decompression method and a water vapor product for testing. In the following, instructions about the environment configuration and the scripts execution are provided.
 
 # Dataset
 An example of water vapor map in GeoTIFF format can be dowloaded from [here](https://www.dropbox.com/s/1so24p6d0tw76m2/20180402163741_APS_MM_ZENITH_MERGED.tif?dl=0). The map is related to South Africa areas and is derived from the synergic use of SAR Sentinel-1 and GNSS data. The file size is about 170 MB.
