@@ -17,7 +17,7 @@ An example of water vapor map in GeoTIFF format can be dowloaded from [here](//w
 3. GeoTIFF recovery from JPEG
 
 ## Environment configuration
-The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](https://gdal.org/api/python.html), [rasterio](https://rasterio.readthedocs.io/en/latest/), [numpy](https://numpy.org/), [scipy](https://www.scipy.org/), [PIL](https://pillow.readthedocs.io/en/stable/), [subprocess](https://docs.python.org/3/library/subprocess.html)). 
+The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](https://gdal.org/api/python.html), [rasterio](https://rasterio.readthedocs.io/en/latest/), [numpy](https://numpy.org/), [scipy](https://www.scipy.org/), [PIL](https://pillow.readthedocs.io/en/stable/)). 
 
 The installation of [Anaconda toolkit](https://www.anaconda.com/products/individual) is suggested as it provides all necessary tools in one package.
 In the repository SCRIPTS folder the *env.yml* file is provided to setup the working environment. Download the *env.yml* file, then open the Anaconda Prompt:
