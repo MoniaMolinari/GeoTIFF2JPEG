@@ -20,7 +20,7 @@ An example of water vapor map in GeoTIFF format can be dowloaded from [here](//w
 The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](https://gdal.org/api/python.html), [rasterio](https://rasterio.readthedocs.io/en/latest/), [numpy](https://numpy.org/), [scipy](https://www.scipy.org/), [PIL](https://pillow.readthedocs.io/en/stable/), [subprocess](https://docs.python.org/3/library/subprocess.html)). 
 
 The installation of [Anaconda toolkit](https://www.anaconda.com/products/individual) is suggested as it provides all necessary tools in one package.
-In the repository SCRIPTS folder the *env.yml* file is provided to setup the working environment. Download env.yml, then open the Anaconda Prompt and type:
+In the repository SCRIPTS folder the *env.yml* file is provided to setup the working environment. Download the *env.yml* file, then open the Anaconda Prompt and type:
 ```
 conda env create -f /path_to_yml/environment.yml
 ```
@@ -29,7 +29,7 @@ The script requires as input the path to the GeoTIFF image to convert in JPEG fo
 ```
 python /path_to_script/GTiff2jpg.py /path_to_image/image.tif
 ```
-The output consists of the image in JPEG format and two auxiliary files for rescaling (*.xml*), georeferencing (*.wld*) and masking (.gif*).
+The output consists of the image in JPEG format and three auxiliary files for rescaling (*.xml*), georeferencing (*.wld*) and masking (.gif*) recover processes.
 
 ## GeoTIFF recovery from JPEG
 The script requires as input the path to the JPEG image to recover in GeoTIFF format. The same folder must contains auxiliary files (*.gif*, *.xml* and *.wld*).
