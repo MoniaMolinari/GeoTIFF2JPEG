@@ -21,7 +21,7 @@ The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](htt
 
 The installation of [Anaconda toolkit](https://www.anaconda.com/products/individual) is suggested as it provides all necessary tools in one package.
 In the repository SCRIPTS folder the *env.yml* file is provided to setup the working environment. Download the *env.yml* file, then open the Anaconda Prompt:
-- Create the virtual environment (called *geo*) from the .yml file by typing:
+- Create the virtual environment (called *geo*) by typing:
 ```
 conda env create -f /path_to_yml/environment.yml
 ```
