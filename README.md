@@ -22,7 +22,7 @@ The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](htt
 The installation of [Anaconda toolkit](https://www.anaconda.com/products/individual) is suggested as it provides all necessary tools in one package.
 In the repository SCRIPTS folder the env.yml file is provided to setup the working environment. Download env.yml, then open the Anaconda Prompt and type:
 ```
-conda env create -f /*PATH*/environment.yml
+conda env create -f /path_to_yml/environment.yml
 ```
 ## GeoTIFF to JPEG 
 The script requires as input the path to the GeoTIFF image to convert in JPEG format. From the Anaconda Prompt type:
