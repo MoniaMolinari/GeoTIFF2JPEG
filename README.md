@@ -27,7 +27,7 @@ conda env create -f /PATH/environment.yml
 ## GeoTIFF to JPEG 
 The script requires as input the path to the GeoTIFF image to convert in JPEG format. From the Anaconda Prompt type:
 ```
-python /PATH/GTiff2jpg.py "/PATH/Gtiff.tif"
+python /path_to_script/GTiff2jpg.py "/path_to_image/Gtiff.tif"
 ```
 
 ## GeoTIFF recovery from JPEG
