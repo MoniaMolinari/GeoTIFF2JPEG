@@ -23,6 +23,7 @@ The installation of [Anaconda toolkit](https://www.anaconda.com/products/individ
 In the repository SCRIPTS folder the *env.yml* file is provided to setup the working environment. Download the *env.yml* file, then open the Anaconda Prompt and type:
 ```
 conda env create -f /path_to_yml/environment.yml
+conda activate geo
 ```
 ## GeoTIFF to JPEG conversion
 The script requires as input the path to the GeoTIFF image to convert in JPEG format. From the Anaconda Prompt type:
