@@ -14,7 +14,11 @@ An example of water vapor map in GeoTIFF format can be dowloaded from [here](//w
 
 1. Environment configuration
 2. GeoTIFF to JPEG conversion
-3. GeoTIFF recovering from JPEG
+3. GeoTIFF recovery from JPEG
 
 ## Environment configuration
-The code is entirely based on Python libraries (python-gdal, rasterio, numpy, scipy, etc.). 
+The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](https://gdal.org/api/python.html), [rasterio](https://rasterio.readthedocs.io/en/latest/), [numpy](https://numpy.org/), [scipy](https://www.scipy.org/), [PIL](https://pillow.readthedocs.io/en/stable/), [subprocess](https://docs.python.org/3/library/subprocess.html)). 
+
+## GeoTIFF to JPEG conversion
+
+## GeoTIFF recovery from JPEG
