@@ -24,7 +24,7 @@ In the repository SCRIPTS folder the *env.yml* file is provided to setup the wor
 ```
 conda env create -f /path_to_yml/environment.yml
 ```
-## GeoTIFF to JPEG 
+## GeoTIFF to JPEG conversion
 The script requires as input the path to the GeoTIFF image to convert in JPEG format. From the Anaconda Prompt type:
 ```
 python /path_to_script/GTiff2jpg.py "/path_to_image/image.tif"
