@@ -35,7 +35,7 @@ The script requires as input the path to the GeoTIFF image to convert in JPEG fo
 ```
 python /path_to_script/GTiff2jpg.py /path_to_image/image.tif
 ```
-The output consists of the image in JPEG format and three auxiliary files for rescaling (*.xml*), georeferencing (*.wld*) and masking (.gif*) recover processes.
+The output consists of the image in JPEG format and three auxiliary files for rescaling (*.xml*), georeferencing (*.wld*) and masking (*.gif*) recover processes.
 
 ## GeoTIFF recovery from JPEG
 The script requires as input the path to the JPEG image to recover in GeoTIFF format. The same folder must contains auxiliary files (*.gif*, *.xml* and *.wld*).
