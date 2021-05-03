@@ -31,7 +31,7 @@ python /path_to_script/GTiff2jpg.py "/path_to_image/image.tif"
 ```
 
 ## GeoTIFF recovery from JPEG
-The script requires as input the path to the JPEG image to recover in GeoTIFF format. The same folder must contains mask (.gif), metadata (.xml) and georeferencing (.wld) files.
+The script requires as input the path to the JPEG image to recover in GeoTIFF format. The same folder must contains mask (*.gif*), metadata (*.xml*) and georeferencing (*.wld*) files.
 From the Anaconda Prompt type:
 ```
 python /path_to_script/jpg2GTiff.py "/path_to_image/image.jpeg"
