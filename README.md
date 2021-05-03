@@ -29,11 +29,10 @@ The script requires as input the path to the GeoTIFF image to convert in JPEG fo
 ```
 python /path_to_script/GTiff2jpg.py /path_to_image/image.tif
 ```
-
-The output consists of the image in JPEG format and two auxiliary files for rescaling (*.xml*) and georeferencing (*.wld*).
+The output consists of the image in JPEG format and two auxiliary files for rescaling (*.xml*), georeferencing (*.wld*) and masking (.gif*).
 
 ## GeoTIFF recovery from JPEG
-The script requires as input the path to the JPEG image to recover in GeoTIFF format. The same folder must contains mask (*.gif*), rescaling (*.xml*) and georeferencing (*.wld*) files.
+The script requires as input the path to the JPEG image to recover in GeoTIFF format. The same folder must contains auxiliary files (*.gif*, *.xml* and *.wld*).
 From the Anaconda Prompt type:
 ```
 python /path_to_script/jpg2GTiff.py /path_to_image/image.jpeg
