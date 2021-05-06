@@ -35,14 +35,18 @@ filepath_Gtiff = filepath_jpg.split(".")[0] + ".tif"
 # Check if all the encessary files exist
 
 if not os.path.isfile(filepath_jpg +".aux.xml"):
+    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg +".aux.xml")
     sys.exit()
     
 if not os.path.isfile(filepath_jpg.split("jpg")[0] +"wld"):
+    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split("jpg")[0] +"wld")
     sys.exit()
     
 if not os.path.isfile(filepath_jpg.split(".jpg")[0] +"_mask.gif"):
+    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split(".jpg")[0] +"_mask.gif")
     sys.exit()
 
+print("Conversion of %s started..."%filepath_jpg)
 
 # Convert jpeg to GeoTiff
 cmd = ['gdal_translate', '-of', 'GTiff', filepath_jpg, filepath_tiff]
@@ -65,17 +69,20 @@ arr=src.read(1)
 cols=arr.shape[1]
 rows=arr.shape[0]
 
-
 new_arr = arr * scaleX1 + scaleX2
 
 if percentile_1<0:
     new_arr = new_arr + percentile_1
+    
+print("...Rescaling performed.\n")
 
 # Read and apply mask
 img = Image.open(filepath_jpg.split(".jpg")[0] +"_mask.gif")
 mask_arr = np.asarray(img)
 new_arr[mask_arr==0]=-9999
 img.close()
+
+print("...Masking performed.\n")
 
 # Remove jpeg, wld file and mask
 os.remove(filepath_jpg)
