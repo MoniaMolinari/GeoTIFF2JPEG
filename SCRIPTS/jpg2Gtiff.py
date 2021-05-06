@@ -46,7 +46,7 @@ if not os.path.isfile(filepath_jpg.split(".jpg")[0] +"_mask.gif"):
     print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split(".jpg")[0] +"_mask.gif")
     sys.exit()
 
-print("Conversion of %s started..."%filepath_jpg)
+print("\nConversion of %s started...\n"%filepath_jpg)
 
 # Convert jpeg to GeoTiff
 cmd = ['gdal_translate', '-of', 'GTiff', filepath_jpg, filepath_tiff]
@@ -105,4 +105,6 @@ src.close()
 
 # Remove not rescaled GeoTiff
 os.remove(filepath_tiff)
+          
+print("\nConversion of %s completed :-D\n"%filepath_jpg)
 
