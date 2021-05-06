@@ -35,15 +35,15 @@ filepath_Gtiff = filepath_jpg.split(".")[0] + ".tif"
 # Check if all the encessary files exist
 
 if not os.path.isfile(filepath_jpg +".aux.xml"):
-    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg +".aux.xml")
+    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg +".aux.xml"))
     sys.exit()
     
 if not os.path.isfile(filepath_jpg.split("jpg")[0] +"wld"):
-    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split("jpg")[0] +"wld")
+    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split("jpg")[0] +"wld"))
     sys.exit()
     
 if not os.path.isfile(filepath_jpg.split(".jpg")[0] +"_mask.gif"):
-    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split(".jpg")[0] +"_mask.gif")
+    print("%s input file not available. The conversion cannot be executed.\n"%(filepath_jpg.split(".jpg")[0] +"_mask.gif"))
     sys.exit()
 
 print("\nConversion of %s started...\n"%filepath_jpg)
