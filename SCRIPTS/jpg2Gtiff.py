@@ -84,12 +84,6 @@ img.close()
 
 print("...Masking performed.\n")
 
-# Remove jpeg, wld file and mask
-os.remove(filepath_jpg)
-os.remove(filepath_jpg +".aux.xml")
-os.remove(filepath_jpg.split("jpg")[0] +"wld")
-os.remove(filepath_jpg.split(".jpg")[0] +"_mask.gif")
-
 # Save rescaled GeoTiff
 profile = src.profile.copy()
 profile.update(
