@@ -75,7 +75,7 @@ amax=np.nanmax(arr_smooth)
 arr_rescaled = (np.round((((arr_smooth-amin) / (amax-amin) * 255)+amin))).astype(np.uint8)
 scaleX1=(amax-amin)/255
 scaleX2 = amin
-print("...Rescaling performed.\n")
+
 
 # Create rescaled GTiff
 profile = src.profile.copy()
@@ -89,6 +89,7 @@ with rasterio.open(filepath_tif, 'w', **profile) as dst:
      dst.update_tags(SCALE_X1=scaleX1)
      dst.update_tags(SCALE_X2=scaleX2)
 
+print("...Rescaling performed.\n")
 
 # Convert GTiff to JPEG
 cmd = ['gdal_translate', '-of', 'JPEG', '-co', 'worldfile=yes', filepath_tif,filepath_jpg]
