@@ -74,7 +74,7 @@ new_arr = arr * scaleX1 + scaleX2
 if percentile_1<0:
     new_arr = new_arr + percentile_1
     
-print("...Rescaling performed.\n")
+print("\n...Rescaling performed.\n")
 
 # Read and apply mask
 img = Image.open(filepath_jpg.split(".jpg")[0] +"_mask.gif")
@@ -106,5 +106,5 @@ src.close()
 # Remove not rescaled GeoTiff
 os.remove(filepath_tiff)
           
-print("\nConversion of %s completed :-D\n"%filepath_jpg)
+print("Conversion of %s completed :-D\n"%filepath_jpg)
 
