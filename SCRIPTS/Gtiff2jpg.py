@@ -22,7 +22,7 @@ parser.add_argument('input', type=str,
 # Get input argument
 args = parser.parse_args()
 filepath = args.input
-print("Conversion of %s started..."%filepath)
+print("Conversion of %s started...\n"%filepath)
 
 # Define temporary and output files
 f=filepath.split("/")[-1]
