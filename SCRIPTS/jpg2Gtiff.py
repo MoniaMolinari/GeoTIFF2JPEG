@@ -29,8 +29,8 @@ args = parser.parse_args()
 filepath_jpg = args.input
 
 # Define temporary and output files
-filepath_tiff = filepath_jpg.split(".")[0] + "_1.tif"
-filepath_Gtiff = filepath_jpg.split(".")[0] + ".tif"
+filepath_tiff = filepath_jpg.split(".jpg")[0] + "_1.tif"
+filepath_Gtiff = filepath_jpg.split(".jpg")[0] + ".tif"
 
 # Check if all the encessary files exist
 
