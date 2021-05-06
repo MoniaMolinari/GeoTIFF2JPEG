@@ -22,7 +22,7 @@ parser.add_argument('input', type=str,
 # Get input argument
 args = parser.parse_args()
 filepath = args.input
-print("Conversion of %s started"%filepath)
+print("Conversion of %s started..."%filepath)
 
 # Define temporary and output files
 f=filepath.split("/")[-1]
@@ -62,11 +62,11 @@ image_pil.save(filepath_mask)
     
 # Fill NODATA
 arr_filled = fillnodata(arr, mask=mask_arr, max_search_distance=1000, smoothing_iterations=0)
-print("NODATA filled.\n")
+print("...NODATA filled.\n")
 
 #  Smoothing
 arr_smooth = ndimage.gaussian_filter(arr_filled,sigma=2)
-print("Smoothing performed.\n")
+print("...Smoothing performed.\n")
 
 # Rescale from 0 to 255
 amin=np.nanmin(arr_smooth)
@@ -75,7 +75,7 @@ amax=np.nanmax(arr_smooth)
 arr_rescaled = (np.round((((arr_smooth-amin) / (amax-amin) * 255)+amin))).astype(np.uint8)
 scaleX1=(amax-amin)/255
 scaleX2 = amin
-print("Rescaling performed.\n")
+print("...Rescaling performed.\n")
 
 # Create rescaled GTiff
 profile = src.profile.copy()
@@ -97,4 +97,4 @@ sp.check_call(cmd, shell=True)
 # Remove rescaled GTiff
 os.remove(filepath_tif)
 
-print("Conversion of %s completed"%filepath)
+print("Conversion of %s completed :-D"%filepath)
