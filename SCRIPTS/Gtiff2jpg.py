@@ -22,7 +22,7 @@ parser.add_argument('input', type=str,
 # Get input argument
 args = parser.parse_args()
 filepath = args.input
-print("Conversion of %s started...\n"%filepath)
+print("\nConversion of %s started...\n"%filepath)
 
 # Define temporary and output files
 f=filepath.split("/")[-1]
@@ -98,4 +98,4 @@ sp.check_call(cmd, shell=True)
 # Remove rescaled GTiff
 os.remove(filepath_tif)
 
-print("Conversion of %s completed :-D"%filepath)
+print("\nConversion of %s completed :-D"%filepath)
