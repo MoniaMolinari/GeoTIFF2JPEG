@@ -30,6 +30,19 @@ filepath_tif = filepath.split(f)[0]+"NEW.tif"
 filepath_jpg = filepath.split(".tif")[0]+".jpg"
 filepath_mask = filepath.split(".tif")[0]+"_mask.gif"
 
+# Remove existing output files
+if os.path.isfile(filepath_jpg):
+    os.remove(filepath_jpg)
+
+if os.path.isfile(filepath_jpg.split("jpg")[0] +"wld"):
+    os.remove(filepath_jpg.split("jpg")[0] +"wld")
+
+if os.path.isfile(filepath_jpg +".aux.xml"):
+    os.remove(filepath_jpg +".aux.xml")
+
+if os.path.isfile(filepath_mask):
+    os.remove(filepath_mask)
+
 # Open GTiff
 src = rasterio.open(filepath)
 arr=src.read(1)
