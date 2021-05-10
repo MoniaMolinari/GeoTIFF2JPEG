@@ -91,8 +91,10 @@ scaleX2 = amin
 
 # Create rescaled GTiff
 profile = src.profile.copy()
-if profile['nodata']<0 or profile['nodata']>255:
-    del profile['nodata']
+if profile['nodata']!=None:
+    if profile['nodata']<0 or profile['nodata']>255:
+        del profile['nodata']
+        
 profile.update(
    dtype='uint8'
     )
