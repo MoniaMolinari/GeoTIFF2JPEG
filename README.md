@@ -8,7 +8,7 @@ The main drawback in data delivery and storage of water vapor products is certai
 The repository provides the Python scripts implementing the compression/decompression method and a water vapor product for testing. In the following, instructions about the environment configuration and the scripts execution are provided.
 
 # Dataset
-An example of water vapor map in GeoTIFF format can be dowloaded from [here](//https://www.dropbox.com/s/0vf0s90gvnculq3/20180402163741_APS_MM_ZENITH.tif?dl=0). The map is related to South Africa areas and is derived from the synergic use of SAR Sentinel-1 and GNSS data. The file size is about 170 MB.
+An example of water vapor map in GeoTIFF format can be dowloaded from [here](https://www.dropbox.com/s/0vf0s90gvnculq3/20180402163741_APS_MM_ZENITH.tif?dl=0). The map is related to South Africa areas and is derived from the synergic use of SAR Sentinel-1 and GNSS data. The file size is about 170 MB.
 
 # Script execution
 
