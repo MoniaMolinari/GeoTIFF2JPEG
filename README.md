@@ -44,3 +44,7 @@ From the Anaconda Prompt type:
 python /path_to_script/jpg2GTiff.py /path_to_image/image.jpeg
 ```
 The output is the image recovered in GeoTIFF format. For the considered example the output image is available [here](https://www.dropbox.com/s/14talzqj5cv8kzu/20180402163741_APS_MM_ZENITH.tif?dl=0).
+
+# References
+Molinari M.E, Manzoni M., Petrushevsky N., Monti-Guarnieri A., Venuti G., Meroni A.N., Mascitelli A., Parodi A. A NOVEL PROCEDURE FOR GENERATION OF SAR-DERIVED ZTD MAPS FOR
+WEATHER PREDICTION: APPLICATION TO SOUTH AFRICA USE CASE. [TO COMPLETE AFTER PUBLICATION]
