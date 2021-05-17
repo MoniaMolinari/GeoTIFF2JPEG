@@ -43,3 +43,4 @@ From the Anaconda Prompt type:
 ```
 python /path_to_script/jpg2GTiff.py /path_to_image/image.jpeg
 ```
+The output is the image recovered in GeoTIFF format. For the considered example the output image is available [here](https://www.dropbox.com/sh/1icnfhmjpn1oae0/AACDUFIrv93Tz8WNIjbodJ2Fa?dl=0).
