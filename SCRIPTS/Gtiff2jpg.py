@@ -54,8 +54,8 @@ np.nanmin(arr)
 np.nanmax(arr)
 
 # Compute percentiles and rescale image
-percentile_1 = np.nanpercentile(arr, 0.005)
-percentile_99 = np.nanpercentile(arr, 99.995)
+percentile_1 = np.nanpercentile(arr, 0.1)
+percentile_99 = np.nanpercentile(arr, 99.9)
 
 arr[arr > percentile_99] = percentile_99
 arr[arr < percentile_1] = percentile_1
