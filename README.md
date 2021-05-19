@@ -43,7 +43,7 @@ From the Anaconda Prompt type:
 ```
 python /path_to_script/jpg2GTiff.py /path_to_image/image.jpeg
 ```
-The output is the image recovered in GeoTIFF format. For the considered example the output image is available [here](https://www.dropbox.com/s/14talzqj5cv8kzu/20180402163741_APS_MM_ZENITH.tif?dl=0).
+The output is the image recovered in GeoTIFF format. For the considered example the output image is available [here](https://www.dropbox.com/s/gjbiekl21sldcy7/20180402163741_APS_MM_ZENITH_MERGED_recovered.tif?dl=0).
 
 # References
 Molinari M.E, Manzoni M., Petrushevsky N., Monti-Guarnieri A., Venuti G., Meroni A.N., Mascitelli A., Parodi A. A novel procedure for generation of SAR-derived ZTD maps for
