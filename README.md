@@ -20,7 +20,7 @@ An example of water vapor map in GeoTIFF format can be dowloaded from [here](htt
 The code is entirely based on Python 3.7 and Python libraries ([GDAL Python](https://gdal.org/api/python.html), [rasterio](https://rasterio.readthedocs.io/en/latest/), [numpy](https://numpy.org/), [scipy](https://www.scipy.org/), [PIL](https://pillow.readthedocs.io/en/stable/)). 
 
 The installation of [Anaconda toolkit](https://www.anaconda.com/products/individual) is suggested as it provides all necessary tools in one package.
-In the repository *SCRIPTS* folder the [*geo.yml*](SCRIPTS/geo.yml) file is provided to setup the working environment. Download the *env.yml* file, then open the Anaconda Prompt:
+In the repository *SCRIPTS* folder the [*geo.yml*](SCRIPTS/geo.yml) file is provided to setup the working environment. Download the *.yml* file, then open the Anaconda Prompt:
 - Create the virtual environment (called *geo*) by typing:
 ```
 conda env create -f /path_to_yml/geo.yml
