@@ -70,7 +70,7 @@ cols=arr.shape[1]
 rows=arr.shape[0]
 
 new_arr_i = arr * scaleX1 + scaleX2
-new_arr = new_arr_i.dstype('float64')
+new_arr = new_arr_i.astype('float64')
 
 if percentile_1<0:
     new_arr = new_arr + percentile_1
